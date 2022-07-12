@@ -5,7 +5,7 @@ import { Progress } from "reactstrap";
 import Boolean from "./components/QuestionTypes/Boolean";
 import Multiple from "./components/QuestionTypes/Multiple";
 import Single from "./components/QuestionTypes/Single";
-import TryAgain from "./components/TryAgain/TryAgain";
+import PopUp from "./components/TryAgain/PopUp";
 
 import { setDataWithExpiry, getDataWithExpiry } from "./Utilities/Api";
 import { fetchData } from "./helpers/fetchData";
@@ -89,7 +89,7 @@ const Quiz = () => {
               {score} / {questions.length}
             </h1>
           </div>
-          <TryAgain value={score} total={questions.length} />
+          <PopUp value={score} total={questions.length} />
         </div>
       )}
       <div className="progress-bar-container">

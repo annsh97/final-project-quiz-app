@@ -8,6 +8,7 @@ h1 {
 table {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 tbody {
   border-bottom: 1px solid rgb(231, 206, 62);

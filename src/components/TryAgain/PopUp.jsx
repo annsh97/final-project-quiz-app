@@ -1,10 +1,17 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./tryagain.css";
 
-const TryAgain = (props) => {
+import "./tryagain.scss";
+
+const Popup = (props) => {
   const [showPopup, setShowPopup] = useState(false);
   const popupRef = useRef(null);
+
+  const handlePopupClick = (e) => {
+    if (!popupRef.current.contains(e.target)) {
+      setShowPopup(false);
+    }
+  };
 
   const closePopup = () => {
     setShowPopup(false);
@@ -12,6 +19,15 @@ const TryAgain = (props) => {
 
   const openPopup = (e) => {
     setShowPopup(true);
+  };
+
+  const saveRefresh = () => {
+    window.location.reload(false);
+    saveAttempt();
+  };
+
+  const refreshOnly = () => {
+    window.location.reload(false);
   };
 
   const saveAttempt = () => {
@@ -46,29 +62,11 @@ const TryAgain = (props) => {
     localStorage.setItem("attempts", JSON.stringify(attempts));
   };
 
-  useEffect(() => {
-    const hidePopup = (e) => {
-      if (!popupRef.current?.contains(e.target) && showPopup) {
-        setShowPopup(false);
-      }
-    };
-    window.addEventListener("click", hidePopup);
-
-    return () => {
-      window.removeEventListener("click", hidePopup);
-    };
-  });
-
   return (
     <div className="buttons-wrapper">
-      <div className="btn-link">
-        <button onClick={openPopup}>Try Again</button>
-      </div>
-      <Link to="/history" className="btn-link">
-        <button className="btn-history" onClick={saveAttempt}>
-          HISTORY
-        </button>
-      </Link>
+      <button className="tryAgain" onClick={openPopup}>
+        Try Again
+      </button>
       {showPopup && (
         <div
           style={{
@@ -76,25 +74,29 @@ const TryAgain = (props) => {
             opacity: showPopup ? "1" : "0",
           }}
           className="overlay"
+          onClick={handlePopupClick}
         >
-          <div className="popup" ref={popupRef}>
-            <h4>Do you want to save this attempt?</h4>
-            <span className="close" onClick={closePopup}>
-              &#x2717;
-            </span>
-            <div className="buttons-wrapper popup-buttons">
-              <Link to="/" className="btn-link">
-                <button onClick={saveAttempt}>Yes</button>
-              </Link>
-              <Link to="/" className="btn-link">
-                <button className="btn-history">No</button>
-              </Link>
-            </div>
-          </div>
+          <h3>Do you want to save this attempt?</h3>
+
+          <span className="close-button" onClick={closePopup}>
+            X
+          </span>
+
+          <button onClick={saveRefresh} className="Save">
+            Yes
+          </button>
+
+          <button className="no" onClick={refreshOnly}>
+            No
+          </button>
         </div>
       )}
+
+      <Link to="/history">
+        <button onClick={saveAttempt}>History </button>
+      </Link>
     </div>
   );
 };
 
-export default TryAgain;
+export default Popup;
