@@ -48,7 +48,11 @@ export const Single = (props) => {
         </div>
       </div>
       {!confirm && selected && (
-        <button onClick={() => handleConfirm()} disabled={!selected}>
+        <button
+          className="btn"
+          onClick={() => handleConfirm()}
+          disabled={!selected}
+        >
           Confirm
         </button>
       )}

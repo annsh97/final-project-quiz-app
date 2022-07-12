@@ -1,7 +1,7 @@
 h1 {
   text-transform: uppercase;
   font-weight: bold;
-  color: red;
+  color: rgb(133, 53, 53);
   padding: 20px 10px;
   text-align: center;
 }
@@ -10,13 +10,13 @@ table {
   margin: 0 auto;
 }
 tbody {
-  border-bottom: 1px solid gold;
-  color: red;
+  border-bottom: 1px solid rgb(231, 206, 62);
+  color: rgb(119, 54, 54);
   text-align: center;
 }
 tr {
-  border-bottom: 1px solid gold;
-  color: red;
+  border-bottom: 1px solid rgb(240, 213, 61);
+  color: rgb(45, 25, 9);
   text-align: center;
 }
 td {
@@ -32,7 +32,7 @@ th {
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
-  color: brown;
+  color: rgb(75, 27, 27);
   border: 1px solid gold;
 }
 
@@ -49,7 +49,7 @@ th {
   top: 6px;
   left: 6px;
   align-items: center;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #048993);
+  background-image: linear-gradient(144deg, #ab65dd, #5f51bb 50%, #048993);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;

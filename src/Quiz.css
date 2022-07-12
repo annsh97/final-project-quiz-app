@@ -4,12 +4,13 @@
   top: 50%;
   align-items: center;
   justify-content: center;
-  align-items: center;
 }
 .progress-bar-container {
   width: 100%;
   background-color: #b87fca;
   text-align: center;
+  border-top: 2px solid rgba(255, 217, 0, 0.331);
+  border-bottom: 2px solid rgba(255, 217, 0, 0.543);
 }
 
 .score-container {
@@ -44,8 +45,11 @@ button {
   cursor: pointer;
   font-size: 1.1rem;
   font-family: inherit;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 20px;
+  margin: 0em;
+  border-top: 4px solid gold;
+  border-bottom: 4px solid gold;
 }
 button:hover {
   background-color: #982cb6;

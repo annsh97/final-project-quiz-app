@@ -1,4 +1,5 @@
-export const API = "https://my-json-server.typicode.com/bladwing/DB/db";
+export const API =
+  "https://my-json-server.typicode.com/annsh97/final-project-quiz-app/db";
 
 export const setDataWithExpiry = (key, value, ttl) => {
   const now = new Date();

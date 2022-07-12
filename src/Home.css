@@ -11,7 +11,7 @@ body {
   top: 50%;
 
   align-items: center;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #048993);
+  background-image: linear-gradient(144deg, #7b5894, #4a3d9b 50%, #47bcc5);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -74,7 +74,7 @@ body {
   top: 6px;
   left: 6px;
   align-items: center;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #048993);
+  background-image: linear-gradient(144deg, #9866bc, #50449a 50%, #5baeb4);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
