@@ -11,30 +11,30 @@ table {
   margin-bottom: 40px;
 }
 tbody {
-  border-bottom: 1px solid rgb(231, 206, 62);
+  border-bottom: 1px solid greenyellow;
   color: rgb(119, 54, 54);
   text-align: center;
 }
 tr {
-  border-bottom: 1px solid rgb(240, 213, 61);
+  border-bottom: 1px solid greenyellow;
   color: rgb(45, 25, 9);
   text-align: center;
 }
 td {
   padding: 10px;
-  border: 1px solid gold;
+  border: 1px solid greenyellow;
 }
 
 thead {
-  border-top: 2px solid gold;
-  border-bottom: 2px solid gold;
+  border-top: 2px solid greenyellow;
+  border-bottom: 2px solid greenyellow;
 }
 th {
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
   color: rgb(75, 27, 27);
-  border: 1px solid gold;
+  border: 1px solid greenyellow;
 }
 
 .active {
