@@ -4,18 +4,21 @@
       "id": 1,
       "type": "single",
       "question": "რომელი მეთოდი გვიბრუნებს ობიექტის პრიმიტიულ მნიშვნელობას?",
+
       "options": ["values()", "concat()", "at()", "valueOf()"]
     },
     {
       "id": 2,
       "type": "multiple",
       "question": "რომლებია Array-ის მეთოდები ",
+
       "options": ["map()", "valueOf()", "filter()", "values()"]
     },
     {
       "id": 3,
       "type": "single",
       "question": "რისთვის გამოიყენება concat() მეთოდი?",
+
       "options": [
         "ორ ან მეტ array-ის აერთიანებს ისე რომ არ ეხება არსებულ array-ის და ქმნის ახალს.",
         "ქმნის ახალ array-ის და გადააწერს არსებულს",
