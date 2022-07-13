@@ -9,8 +9,9 @@
   width: 100%;
   background-color: #b87fca;
   text-align: center;
-  border-top: 2px solid rgba(255, 217, 0, 0.331);
-  border-bottom: 2px solid rgba(255, 217, 0, 0.543);
+  border-top: 2px solid greenyellow;
+  border-bottom: 2px solid greenyellow;
+  -ms-progress-appearance: bar;
 }
 
 .score-container {
@@ -31,10 +32,11 @@ body {
 
 .page {
   background-color: rgb(44, 124, 161);
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
   width: 600px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 button {
@@ -48,8 +50,8 @@ button {
   padding: 0.5rem;
   border-radius: 20px;
   margin: 0em;
-  border-top: 4px solid gold;
-  border-bottom: 4px solid gold;
+  border-top: 4px solid greenyellow;
+  border-bottom: 4px solid greenyellow;
 }
 button:hover {
   background-color: #982cb6;
