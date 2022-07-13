@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ContextMenu from "../ContextMenu/ContextMenu";
-import Popup from "../TryAgain/PopUp";
+
 import "./History.css";
 
 const History = () => {
