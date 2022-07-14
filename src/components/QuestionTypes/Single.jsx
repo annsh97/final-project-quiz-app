@@ -56,7 +56,11 @@ export const Single = (props) => {
           Confirm
         </button>
       )}
-      {confirm && <button onClick={() => props.onClick()}>Next</button>}
+      {confirm && (
+        <button className="btn" onClick={() => props.onClick()}>
+          Next
+        </button>
+      )}
     </div>
   );
 };

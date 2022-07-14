@@ -13,6 +13,14 @@
   text-align: center;
   border-top: 2px solid rgb(122, 219, 43);
 }
+.question-container {
+  height: 400px;
+}
+.btn {
+  margin-top: 200px;
+  margin-left: 40%;
+  margin-bottom: 200px;
+}
 
 .answer-options {
   margin-bottom: 1rem;

@@ -10,7 +10,7 @@ const Popup = (props) => {
   const handleClick = (e) => {
     if (popupRef.current !== null) {
       if (!popupRef.current.contains(e.target)) {
-        props.closePopup();
+        closePopup();
       }
     }
   };
@@ -64,14 +64,6 @@ const Popup = (props) => {
     localStorage.setItem("attempts", JSON.stringify(attempts));
   };
 
-  useEffect(() => {
-    document.addEventListener("click", handleClick);
-
-    return function cleanUp() {
-      document.removeEventListener("click", handleClick);
-    };
-  });
-
   return (
     <div className="buttons-wrapper">
       <button className="tryAgain" onClick={openPopup}>
@@ -86,24 +78,24 @@ const Popup = (props) => {
           className="overlay"
           onClick={handleClick}
         >
-          <h3>Do you want to save this attempt?</h3>
+          <div className="popup" ref={popupRef}>
+            <span className="close-button2" onClick={closePopup}>
+              X
+            </span>
+            <h3>Do you want to save this attempt?</h3>
+            <button onClick={saveRefresh} className="Save">
+              Yes
+            </button>
 
-          <span className="close-button" onClick={closePopup}>
-            X
-          </span>
-
-          <button onClick={saveRefresh} className="Save">
-            Yes
-          </button>
-
-          <button className="no" onClick={refreshOnly}>
-            No
-          </button>
+            <button className="Save" onClick={refreshOnly}>
+              No
+            </button>
+          </div>
         </div>
       )}
-      <Link to="/history">
-        <button onClick={saveAttempt}>History </button>
-      </Link>
+      <button>
+        <Link to="/history">History</Link>
+      </button>
     </div>
   );
 };
