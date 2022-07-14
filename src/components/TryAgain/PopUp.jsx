@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./tryagain.scss";
@@ -7,9 +7,11 @@ const Popup = (props) => {
   const [showPopup, setShowPopup] = useState(false);
   const popupRef = useRef(null);
 
-  const handlePopupClick = (e) => {
-    if (!popupRef.current.contains(e.target)) {
-      setShowPopup(false);
+  const handleClick = (e) => {
+    if (popupRef.current !== null) {
+      if (!popupRef.current.contains(e.target)) {
+        props.closePopup();
+      }
     }
   };
 
@@ -62,6 +64,14 @@ const Popup = (props) => {
     localStorage.setItem("attempts", JSON.stringify(attempts));
   };
 
+  useEffect(() => {
+    document.addEventListener("click", handleClick);
+
+    return function cleanUp() {
+      document.removeEventListener("click", handleClick);
+    };
+  });
+
   return (
     <div className="buttons-wrapper">
       <button className="tryAgain" onClick={openPopup}>
@@ -74,7 +84,7 @@ const Popup = (props) => {
             opacity: showPopup ? "1" : "0",
           }}
           className="overlay"
-          onClick={handlePopupClick}
+          onClick={handleClick}
         >
           <h3>Do you want to save this attempt?</h3>
 
@@ -91,7 +101,6 @@ const Popup = (props) => {
           </button>
         </div>
       )}
-
       <Link to="/history">
         <button onClick={saveAttempt}>History </button>
       </Link>
