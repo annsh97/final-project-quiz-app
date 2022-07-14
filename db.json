@@ -10,7 +10,7 @@
     {
       "id": 2,
       "type": "multiple",
-      "question": "რომლებია Array-ის მეთოდები ",
+      "question": "რომლებია Array-ის მეთოდები? ",
 
       "options": ["map()", "valueOf()", "filter()", "values()"]
     },
@@ -29,7 +29,7 @@
     {
       "id": 4,
       "type": "boolean",
-      "question": "სწორია თუ არა შედეგი:  const array = [1,2,3,4,5,6] console.log(array.fill(10))  output: (6) [10, 10, 10, 10, 10, 10]"
+      "question": "სწორია თუ არა შედეგი;  const array = [1,2,3,4,5,6]; console.log(array.fill(10));  output: (6) [10, 10, 10, 10, 10, 10]"
     },
     {
       "id": 5,
