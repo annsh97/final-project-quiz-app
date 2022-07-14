@@ -56,11 +56,11 @@ export const Boolean = (props) => {
             <span>false</span>
           </div>
         </div>
+        {!confirm && selected !== null && (
+          <button onClick={() => handleConfirm()}>Confirm</button>
+        )}
+        {confirm && <button onClick={() => props.onClick()}>Next</button>}
       </div>
-      {!confirm && selected !== null && (
-        <button onClick={() => handleConfirm()}>Confirm</button>
-      )}
-      {confirm && <button onClick={() => props.onClick()}>Next</button>}
     </div>
   );
 };

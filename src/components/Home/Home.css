@@ -62,7 +62,6 @@ button:disabled {
   outline: none;
   background-color: rgb(213, 201, 185);
   margin-left: 5%;
-  cursor: pointer;
 }
 
 button:hover {
@@ -83,9 +82,8 @@ button:disabled {
   );
   border-radius: 20px;
   max-width: 300px;
-  margin-left: 12%;
-  margin-right: 10%;
+  margin: 2% auto;
 }
 h1 {
-  margin-left: -9%;
+  margin: 2% auto;
 }

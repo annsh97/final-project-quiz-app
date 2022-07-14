@@ -76,13 +76,13 @@ export const Multiple = (props) => {
             </div>
           ))}
         </div>
+        {!confirm && !!selected.length && (
+          <button onClick={() => handleConfirm()} disabled={!selected}>
+            Confirm
+          </button>
+        )}
+        {confirm && <button onClick={() => props.onClick()}>Next</button>}
       </div>
-      {!confirm && !!selected.length && (
-        <button onClick={() => handleConfirm()} disabled={!selected}>
-          Confirm
-        </button>
-      )}
-      {confirm && <button onClick={() => props.onClick()}>Next</button>}
     </div>
   );
 };
