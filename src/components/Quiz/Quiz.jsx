@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Rings } from "react-loader-spinner";
 import { Progress } from "reactstrap";
 
-import Boolean from "./components/QuestionTypes/Boolean";
-import Multiple from "./components/QuestionTypes/Multiple";
-import Single from "./components/QuestionTypes/Single";
-import PopUp from "./components/TryAgain/PopUp";
+import Boolean from "../QuestionTypes/Boolean";
+import Multiple from "../QuestionTypes/Multiple";
+import Single from "../QuestionTypes/Single";
+import PopUp from "../TryAgain/PopUp";
 
-import { setDataWithExpiry, getDataWithExpiry } from "./Utilities/Api";
-import { fetchData } from "./helpers/fetchData";
+import { setDataWithExpiry, getDataWithExpiry } from "../../Utilities/Api";
+import { fetchData } from "../../helpers/fetchData";
 import { useNavigate } from "react-router-dom";
 import "./Quiz.css";
 
@@ -51,7 +51,7 @@ const Quiz = () => {
 
   return !questions.length ? (
     <div className="app">
-      <Rings color="#FFB03B" height={150} width={150} />
+      <Rings color="#FFB03B" height={300} width={600} />
     </div>
   ) : (
     <div className="page">
