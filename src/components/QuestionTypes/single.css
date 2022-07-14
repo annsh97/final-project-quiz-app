@@ -1,6 +1,7 @@
 .score-section {
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
+  margin: 2% auto;
 }
 
 .question-content {
@@ -17,32 +18,33 @@
   height: 400px;
 }
 .btn {
-  margin-top: 200px;
-  margin-left: 40%;
-  margin-bottom: 200px;
+  margin: 2% auto;
+  padding: 10px;
 }
 
 .answer-options {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   background: lightblue;
   border-radius: 1rem;
+  padding: 10px;
 }
 
 .active {
   background-color: rgb(127, 95, 168);
   border-radius: 15px;
+  padding: 10px;
 }
 
 .wrong {
   background-color: rgba(159, 56, 56, 0.873);
   border-color: rebeccapurple;
   border-radius: 15px;
+  padding: 10px;
 }
 .single-option {
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
 }
 h3 {
   font-size: larger;
