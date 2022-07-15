@@ -94,7 +94,9 @@ const Popup = (props) => {
         </div>
       )}
       <button className="btn-history">
-        <Link to="/history">History</Link>
+        <Link to="/history" onClick={saveAttempt}>
+          History
+        </Link>
       </button>
     </div>
   );
