@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Rings } from "react-loader-spinner";
 import { Progress } from "reactstrap";
 
@@ -9,7 +10,7 @@ import PopUp from "../TryAgain/PopUp";
 
 import { setDataWithExpiry, getDataWithExpiry } from "../../Utilities/Api";
 import { fetchData } from "../../helpers/fetchData";
-import { useNavigate } from "react-router-dom";
+
 import "./Quiz.css";
 
 const Quiz = () => {

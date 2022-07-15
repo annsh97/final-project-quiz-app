@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Boolean = (props) => {
+const Boolean = (props) => {
   const [isCorrect, setIsCorrect] = useState(null);
   const [selected, setSelected] = useState(null);
   const [confirm, setConfirm] = useState(false);
