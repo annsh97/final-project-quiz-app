@@ -47,18 +47,20 @@ th {
 }
 
 .button-home {
-  margin-left: 310px;
-  margin-top: 10px;
+  text-align: center;
+  margin: 2% auto;
   border: none;
   width: 100px;
   height: 40px;
-  text-align: center;
+  justify-content: center;
   border-radius: 0px 10px;
   background: transparent;
   outline: none;
   background-color: rgba(82, 216, 223, 0.675);
   margin-left: 40%;
   font-size: large;
+  display: flex;
+  align-items: center;
 }
 
 button:hover {

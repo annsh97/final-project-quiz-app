@@ -93,7 +93,7 @@ const Popup = (props) => {
           </div>
         </div>
       )}
-      <button>
+      <button className="btn-history">
         <Link to="/history">History</Link>
       </button>
     </div>

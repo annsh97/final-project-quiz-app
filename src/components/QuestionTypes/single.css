@@ -18,8 +18,10 @@
   height: 400px;
 }
 .btn {
-  margin: 2% auto;
-  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .answer-options {
@@ -27,7 +29,6 @@
 
   background: lightblue;
   border-radius: 1rem;
-  padding: 10px;
 }
 
 .active {
@@ -40,11 +41,11 @@
   background-color: rgba(159, 56, 56, 0.873);
   border-color: rebeccapurple;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
 }
 .single-option {
   cursor: pointer;
-  padding: 10px;
+  padding: 20px;
 }
 h3 {
   font-size: larger;

@@ -3,14 +3,17 @@
   width: 100px;
   height: 40px;
   text-align: center;
-
+  align-items: center;
   background: transparent;
   outline: none;
   background-color: rgba(82, 216, 223, 0.675);
-  margin-bottom: 20px;
-  margin-top: 50px;
-  color: rgba(126, 45, 118, 0.597);
-  margin-left: 10%;
+
+  color: rgba(145, 54, 136, 0.739);
+  font-weight: bold;
+  display: flex;
+  margin: 2% auto;
+  font-size: large;
+  justify-content: center;
 }
 
 button:hover {
@@ -23,18 +26,18 @@ button:disabled {
 
 .button-history {
   border: none;
-  width: 200px;
+  width: 100px;
   height: 40px;
   text-align: center;
-
+  align-items: center;
   background: transparent;
   outline: none;
   background-color: rgba(82, 216, 223, 0.675);
-  margin-bottom: 30px;
+
   color: rgba(126, 45, 118, 0.597);
   font-size: large;
-  margin-left: 10%;
-  cursor: pointer;
+  display: flex;
+  margin: 2% auto;
 }
 
 button:hover {
@@ -61,7 +64,10 @@ button:disabled {
   background: transparent;
   outline: none;
   background-color: rgb(213, 201, 185);
-  margin-left: 5%;
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
@@ -83,6 +89,8 @@ button:disabled {
   border-radius: 20px;
   max-width: 300px;
   margin: 2% auto;
+  padding: 40px;
+  align-items: center;
 }
 h1 {
   margin: 2% auto;
