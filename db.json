@@ -29,29 +29,29 @@
     {
       "id": 4,
       "type": "boolean",
-      "question": "სწორია თუ არა შედეგი;  const array = [1,2,3,4,5,6]; console.log(array.fill(10));  output: (6) [10, 10, 10, 10, 10, 10]"
+      "question": "სწორია თუ არა შედეგი:  const array = [1,2,3,4,5,6];   console.log(array.fill(10));      output: (6) [10, 10, 10, 10, 10, 10]"
     },
     {
       "id": 5,
       "type": "single",
-      "question": "  ამოირჩიე მოსალოდნელი შედეგი:   const names = [`giorgi`,`danieli`,`temo`,`giorgi`]  const result = names.find(name => name == `giorgi`)   console.log(result)",
+      "question": "  ამოირჩიე მოსალოდნელი შედეგი:   const names = [`giorgi`,`danieli`,`temo`,`giorgi`];     const result = names.find(name => name == `giorgi`);      console.log(result)",
       "options": ["giorgi, giorgi", "danieli", "giorgi", "temo"]
     },
     {
       "id": 6,
       "type": "boolean",
-      "question": "const listA = [1,2,3]; const listB = new Array(6);console.log(listA.length);output: 3"
+      "question": "სწორია თუ არა შედეგი:    const listA = [1,2,3];     const listB = new Array(6);console.log(listA.length);        output: 3"
     },
     {
       "id": 7,
       "type": "multiple",
-      "question": "რომელი მიეკუთვნება OOP-ს პრინციპებს: ",
+      "question": "რომლები მიეკუთვნება OOP-ს პრინციპებს?:  ",
       "options": ["Encapsulation", "Abstraction", "Inheritance", "Polymorphism"]
     },
     {
       "id": 8,
       "type": "single",
-      "question": "რომელი პროგრამული ენა გამოიყენება front-end Development-ში? ",
+      "question": "რომელი პროგრამული ენა გამოიყენება Front-end Development-ში? ",
       "options": ["JavaScript", "Python", "HTMl", "Angular"]
     }
   ],
