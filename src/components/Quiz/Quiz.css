@@ -62,7 +62,7 @@ button {
   outline: none;
   background-color: rgba(82, 216, 223, 0.675);
   margin: 2% auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 button:hover {

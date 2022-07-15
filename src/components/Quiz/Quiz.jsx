@@ -51,7 +51,7 @@ const Quiz = () => {
 
   return !questions.length ? (
     <div className="app">
-      <Rings color="#FFB03B" height={300} width={600} />
+      <Rings color="#FFB03B" height={350} width={700} />
     </div>
   ) : (
     <div className="page">
