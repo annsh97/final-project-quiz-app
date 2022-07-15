@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./single.css";
-// import "../Single/Single.scss";
 
 export const Single = (props) => {
   const [isCorrect, setIsCorrect] = useState(null);
